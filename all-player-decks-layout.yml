@@ -1,9 +1,11 @@
 #This layout inspired by popular economy games
 title:
-  x: 90
+  x: 160
   y: 90
-  width: 635
-  height: 50
+  width: 495
+  #height: 50
+  ellipsize: false
+  font_size: 13
   align: center
 
 art:
@@ -17,27 +19,38 @@ description:
   y: 675
   width: 625
   height: 275
-  valign: middle
+  valign: top #middle
   align: center
-  font_size: 6
+  font_size: 12
+ # markup: true
 desc: # alias
   extends: description
 
-type:
+deck_name:
   x: 90
   y: 955
   width: 645
   height: 50
+  font_size: 12
+  color: 'gray'
   align: center
 
+embedded_icon:
+  width: 70
+  height: 70
+  dy: -10
+
 lower_right:
-  x: 675
-  y: 975
+  x: 645
+  y: 955
   width: 75
   height: 75
-  font_size: 6
+  font_size: 12
   valign: bottom
   align: right
+cost: #alias
+  font_size: 14
+  extends: lower_right
 lr: #alias
   extends: lower_right
 
