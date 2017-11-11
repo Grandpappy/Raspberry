@@ -1,0 +1,17 @@
+base-type:
+  x: 85
+  y: 85
+  width: 75
+  height: 75
+
+item:
+  extends: base-type
+  file: icons\ring.svg
+
+skill:
+  extends: base-type
+  file: icons\hand.svg
+
+corruption:
+  extends: base-type
+  file: icons\death-skull.svg
