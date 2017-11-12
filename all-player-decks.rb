@@ -5,6 +5,7 @@ layouts = ['all-player-decks-layout.yml', 'player-card-base-types.yml']
 #sub_deck = data['SubDeck'] { |e| e.nil? ? data['BaseType'][i] : e }
 
 Squib::Deck.new(cards: data['Name'].size, layout: layouts) do
+# Squib::Deck.new(cards: 1, layout: layouts) do
   
   background color: 'white'
   rect layout: 'cut' # cut line as defined by TheGameCrafter
@@ -22,6 +23,8 @@ Squib::Deck.new(cards: data['Name'].size, layout: layouts) do
     embed.svg key: ':draw:', file: 'icons\\card-draw.svg', layout: 'embedded_icon'
     embed.svg key: ':move:', file: 'icons\\run.svg', layout: 'embedded_icon'
     embed.svg key: ':shield:', file: 'icons\\checked-shield.svg', layout: 'embedded_icon'
+    embed.svg key: ':heart:', file: 'icons\\heart-organ.svg', layout: 'embedded_icon'
+    embed.svg key: ':corruption:', file: 'icons\\death-skull.svg', layout: 'embedded_icon'
   end
 
   text str: data['Cost'], layout: 'cost'

@@ -5,7 +5,9 @@ title:
   width: 495
   #height: 50
   ellipsize: false
-  font_size: 13
+  #font_size: 13
+  #font: 'Harrington Regular 16'
+  font: 'Papyrus Regular 16'
   align: center
 
 art:
