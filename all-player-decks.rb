@@ -1,7 +1,7 @@
 require 'squib'
 
 data = Squib.xlsx file: 'data/all-player-decks.xlsx'
-layouts = ['all-player-decks-layout.yml', 'player-card-base-types.yml']
+layouts = ['all-decks-layout.yml', 'all-player-decks-layout.yml', 'player-card-base-types.yml']
 #sub_deck = data['SubDeck'] { |e| e.nil? ? data['BaseType'][i] : e }
 
 Squib::Deck.new(cards: data['Name'].size, layout: layouts) do

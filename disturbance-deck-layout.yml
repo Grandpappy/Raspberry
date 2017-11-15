@@ -86,7 +86,7 @@ cut:
   x: 37.5
   y: 37.5
   width: 750
-  height: 1050
+  height: 750
 
 # The "safe zone" as defined by TheGameCrafter poker cards
 # 300 dpi
@@ -94,6 +94,6 @@ safe:
   x: 75
   y: 75
   width: 675
-  height: 975
+  height: 675
   radius: 16
   dash: 3 3
