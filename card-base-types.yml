@@ -6,7 +6,7 @@ base-type:
 
 item:
   extends: base-type
-  file: icons\ring.svg
+  file: icons\claw-hammer.svg #icons\ring.svg
 
 skill:
   extends: base-type
@@ -15,3 +15,19 @@ skill:
 corruption:
   extends: base-type
   file: icons\death-skull.svg
+
+zombie:
+  extends: base-type
+  file: icons\shambling-zombie.svg
+
+lychenthrope:
+  extends: base-type
+  file: icons\wolf-head.svg
+
+horror:
+  extends: base-type
+  file: icons\tentacles-skull.svg
+
+event:
+  extends: base-type
+  file: icons\surprised.svg

@@ -17,7 +17,7 @@ description:
   y: 675
   width: 625
   height: 275
-  valign: top #middle
+  valign: middle #top
   align: center
   font_size: 12
  # markup: true

@@ -1,9 +1,9 @@
-#This layout inspired by popular economy games
+#This layout inspired by euro square tile games
 title:
   extends: base_title
   x: 160
   y: 90
-  width: 495
+  width: 580
   #height: 50
 
 art:
@@ -14,10 +14,10 @@ art:
 
 description:
   x: 100
-  y: 675
-  width: 625
-  height: 275
-  valign: top #middle
+  y: 550
+  width: 700
+  height: 250
+  valign: middle #top
   align: center
   font_size: 12
  # markup: true
@@ -65,8 +65,8 @@ ll: # alias
 
 copyright:
   x: 75
-  y: 1025
-  width: 675
+  y: 800
+  width: 750
   height: 25
   font_size: 5
   align: center
@@ -85,15 +85,15 @@ credits:
 cut:
   x: 37.5
   y: 37.5
-  width: 750
-  height: 750
+  width: 825
+  height: 825
 
 # The "safe zone" as defined by TheGameCrafter poker cards
 # 300 dpi
 safe:
   x: 75
   y: 75
-  width: 675
-  height: 675
+  width: 750
+  height: 750
   radius: 16
   dash: 3 3

@@ -4,33 +4,31 @@ sheet_height: 8.5in
 card_width: 2.75in
 card_height: 2.75in
 cards:
-- x: 0.0in
-  y: 0.0in
-- x: 2.75in
-  y: 0.0in
-- x: 5.5in
-  y: 0.0in
-- x: 8.25in
-  y: 0.0in
-- x: 0.0in
-  y: 2.75in
-- x: 2.75in
-  y: 2.75in
-- x: 5.5in
-  y: 2.75in
-- x: 8.25in
-  y: 2.75in
-crop_line:
-  lines:
-  - type: :vertical
-    position: 0.0in
-  - type: :vertical
-    position: 2.75in
-  - type: :vertical
-    position: 5.5in
-  - type: :vertical
-    position: 8.25in
-  - type: :horizontal
-    position: 0.0in
-  - type: :horizontal
-    position: 2.75in
+- x: 0.5in
+  y: 0.5in
+- x: 3.25in
+  y: 0.5in
+- x: 6.0in
+  y: 0.5in
+- x: 0.5in
+  y: 3.25in
+- x: 3.25in
+  y: 3.25in
+- x: 6.0in
+  y: 3.25in
+# crop_line:
+#   lines:
+#   - type: :vertical
+#     position: 0.5in
+#   - type: :vertical
+#     position: 3.25in
+#   - type: :vertical
+#     position: 6.0in
+#   - type: :vertical
+#     position: 8.75in
+#   - type: :horizontal
+#     position: 0.5in
+#   - type: :horizontal
+#     position: 3.25in
+#   - type: :horizontal
+#     position: 6.0in
