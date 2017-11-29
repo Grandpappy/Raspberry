@@ -2,7 +2,8 @@
 title:
   extends: base_title
   x: 160
-  y: 90
+  #y: 90
+  y: 75
   width: 495
   #height: 50
 

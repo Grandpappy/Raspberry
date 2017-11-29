@@ -1,9 +1,9 @@
 #This layout inspired by euro square tile games
 title:
   extends: base_title
-  x: 160
-  y: 90
-  width: 580
+  x: 170
+  y: 75
+  width: 560
   #height: 50
 
 art:
@@ -11,6 +11,16 @@ art:
   y: 150
   width: 675
   height: 520
+
+combat_dice:
+  x: 800
+  y: 90
+  #y: 190
+  width: 720
+  height: 70
+  angle: 1.5707963267948966192313216916398
+  valign: middle #top
+  align: left
 
 description:
   x: 100

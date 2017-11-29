@@ -1,4 +1,5 @@
 base_title:
   ellipsize: false
-  font: 'Papyrus Regular 14'
+  #font: 'Papyrus Regular 14'
+  font: 'Viner Hand ITC 15'
   align: center

@@ -23,6 +23,15 @@ Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 900, height: 9
     embed.svg key: ':shield:', file: 'icons\\checked-shield.svg', layout: 'embedded_icon'
     embed.svg key: ':heart:', file: 'icons\\heart-organ.svg', layout: 'embedded_icon'
     embed.svg key: ':corruption:', file: 'icons\\death-skull.svg', layout: 'embedded_icon'
+    embed.svg key: ':W:', file: 'icons\\inverted-dice-5-white.svg', layout: 'embedded_icon'
+    embed.svg key: ':R:', file: 'icons\\inverted-dice-5-red.svg', layout: 'embedded_icon'
+    embed.svg key: ':G:', file: 'icons\\inverted-dice-5-green.svg', layout: 'embedded_icon'
+  end
+
+  text str: data['CombatDice'], layout: 'combat_dice' do |embed|
+    embed.svg key: ':W:', file: 'icons\\inverted-dice-5-white.svg', layout: 'embedded_icon'
+    embed.svg key: ':R:', file: 'icons\\inverted-dice-5-red.svg', layout: 'embedded_icon'
+    embed.svg key: ':G:', file: 'icons\\inverted-dice-5-green.svg', layout: 'embedded_icon'
   end
 
   # text str: data['Cost'], layout: 'cost'
