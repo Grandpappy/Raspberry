@@ -4,7 +4,7 @@ data = Squib.xlsx file: 'data/all-player-decks.xlsx'
 layouts = ['all-decks-layout.yml', 'all-player-decks-layout.yml', 'card-base-types.yml']
 #sub_deck = data['SubDeck'] { |e| e.nil? ? data['BaseType'][i] : e }
 
-Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 750, height: 1050) do
+Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 825, height: 1125) do
 # Squib::Deck.new(cards: 1, layout: layouts) do
   
   background color: 'white'
@@ -35,6 +35,6 @@ Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 750, height: 1
   svg layout: data['BaseType']
 
   # save_png prefix: 'player_'
-  save_pdf file: 'all_player_decks.pdf', trim: 37.5
+  save_pdf file: 'all_player_decks.pdf', trim: 37.5 #, sprue: 'a4_poker_card_8up.yml'
 
 end

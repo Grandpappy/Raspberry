@@ -15,9 +15,9 @@ art:
 
 description:
   x: 100
-  y: 675
+  y: 575
   width: 625
-  height: 275
+  height: 375
   valign: middle #top
   align: center
   font_size: 12
@@ -40,15 +40,15 @@ embedded_icon:
   dy: -10
 
 lower_right:
-  x: 645
-  y: 955
-  width: 75
-  height: 75
+  x: 625
+  y: 935
+  width: 95
+  height: 95
   font_size: 12
   valign: bottom
   align: right
 cost: #alias
-  font_size: 14
+  font_size: 15
   extends: lower_right
 lr: #alias
   extends: lower_right
@@ -86,6 +86,8 @@ credits:
 cut:
   x: 37.5
   y: 37.5
+  #width: 675
+  #height: 975
   width: 750
   height: 1050
 

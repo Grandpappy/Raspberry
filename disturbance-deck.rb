@@ -3,6 +3,14 @@ require 'squib'
 data = Squib.xlsx file: 'data/disturbance-deck.xlsx'
 layouts = ['all-decks-layout.yml', 'disturbance-deck-layout.yml', 'card-base-types.yml']
 
+health_icons = data['Health'].map do |e| 
+  e.nil? ? nil : 'icons/hearts.svg'
+end
+
+# thirdskills = data['Default3'].map do |default|
+#   default.nil? ? nil : 'thirdskill.svg'
+# end
+
 Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 900, height: 900) do
 # Squib::Deck.new(cards: 1, layout: layouts) do
   
@@ -39,9 +47,14 @@ Squib::Deck.new(cards: data['Name'].size, layout: layouts, width: 900, height: 9
 
   svg layout: data['BaseType']
 
+  # if current['health'] != nil
+    svg layout: 'health-icon', file: health_icons
+    text str: data['Health'], layout: 'health-text'
+  # end
+
   # Use timestamp for a version number
   text str: Time.now, layout: 'credits'
 
-  save_png prefix: 'disturbance_'
+  # save_png prefix: 'disturbance_'
   save_pdf file: 'disturbance_deck.pdf', trim: 37.5, sprue: 'square-sprue.yml'
 end

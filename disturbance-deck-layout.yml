@@ -34,6 +34,19 @@ description:
 desc: # alias
   extends: description
 
+health-icon:
+  x: 90
+  y: 675
+  width: 100
+  height: 100
+  # file: icons/hearts.svg
+
+health-text:
+  extends: health-icon
+  valign: middle
+  align: center
+  font: 'Viner Hand ITC 15'
+
 deck_name:
   x: 90
   y: 955
