@@ -1,11 +1,17 @@
 #This layout inspired by popular economy games
 title:
   extends: base_title
-  x: 160
+  x: 175
   #y: 90
-  y: 75
-  width: 495
+  y: 85
+  width: 480
   #height: 50
+
+base-type:
+  x: 85
+  y: 85
+  width: 75
+  height: 75
 
 art:
   x: 75
@@ -15,15 +21,47 @@ art:
 
 description:
   x: 100
-  y: 575
+  y: 475
   width: 625
-  height: 375
+  height: 250
   valign: middle #top
   align: center
-  font_size: 12
+  font_size: 11
  # markup: true
 desc: # alias
   extends: description
+
+combo_effect:
+  extends: description
+  x: 235
+  y: 750
+  width: 465
+  height: 175
+
+combo_box:
+  extends: combo_effect
+  fill_color: '#efefef'
+  stroke_color: '#efefef'
+  x: 100
+  y: 750
+  width: 625
+  height: 175
+
+combo_box_none:
+  extends: combo_box
+  fill_color: '#0000'
+  stroke_color: '#0000'
+
+combo_divider_line:
+  x1: 220
+  y1: 785
+  x2: 220
+  y2: 890
+  stroke_color: 'black'
+
+# combo_trigger:
+#   extends: base-type
+#   y: 800
 
 deck_name:
   x: 90
@@ -100,3 +138,11 @@ safe:
   height: 975
   radius: 16
   dash: 3 3
+
+none:
+  fill_color: '#0000'
+  stroke_color: '#0000'
+  x: 0
+  y: 0
+  width: 0
+  height: 0

@@ -1,8 +1,8 @@
-base-type:
-  x: 85
-  y: 85
-  width: 75
-  height: 75
+# base-type:
+#   x: 85
+#   y: 85
+#   width: 75
+#   height: 75
 
 item:
   extends: base-type
@@ -31,3 +31,27 @@ horror:
 event:
   extends: base-type
   file: icons\surprised.svg
+
+Cunning:
+  extends: base-type
+  file: icons\cloak-dagger.svg
+
+Strength:
+  extends: base-type
+  file: icons\strong.svg
+
+Willpower:
+  extends: base-type
+  file: icons\suspicious.svg
+
+Speed:
+  extends: base-type
+  file: icons\walking-boot.svg
+
+cooperative:
+  extends: base-type
+  y: 250
+  file: icons\shaking-hands.svg
+
+None:
+  extends: base-type
